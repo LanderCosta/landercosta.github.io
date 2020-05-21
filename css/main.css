@@ -1,0 +1,28 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  border-top: 3px solid purple;
+  color: purple;
+  padding-top: 4rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60rem;
+  text-align: center;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  height: 10rem;
+  margin-right: 4rem;
+  padding-left: 4rem;
+  width: 10rem;
+}
+
+h1 {
+  font-weight: 500;
+}
