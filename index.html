@@ -5,15 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lander Costa</title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/771023af83.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- TODO: Adicionar menu mobile com ícone hamburguer -->
   <main>
-    <div class="container">
-      <img class="profile-photo" src="./img/perfil.jpeg" alt="Foto do Lander">
-      <h1>Lander Costa</h1>
-    </div>
+    <section class="container hero">
+      <h1>Lander<br>Costa</h1>
+      <p>Web Developer</p>
+      <div class="profile-photo-centralizer">
+        <!-- TODO: Testar troca de imagem com foto sorrindo -->
+        <img class="profile-photo" src="./img/perfil.jpeg" alt="Foto do Lander. Homem branco com cabelo grande, ondulado e com pontas cacheadas até a altura dos ombros, com sorriso leve com a boca para o lado.">
+      </div>      
+    </section>
+
+    <section class="container about">
+      <h2>Sobre</h2>
+      <p>
+        Meu nome é Lander. Sou desenvolvedor web da cidade de Natal/RN com ênfase em front-end.
+      </p>
+      <p>
+        Programação virou parte da minha vida desde que fiz o curso técnico integrado com o ensino médio no CEFET/RN (atual IFRN) e levo a tecnologia para facilitar tarefas em todo lugar que tenho oportunidade.
+      </p>
+      <p>
+        Atualmente me dedico ao aperfeiçoamento na linguagem JavaScript e à construção de um portfolio pessoal.
+      </p>
+    </section>
+
+    <section class="container projects">
+      <h2>Projetos</h2>
+    </section>
+
+    <section class="container contact">
+      <h2>Contato</h2>
+      <p>Quer falar comigo?<br>Seja bem-vindo!</p>
+      <!-- TODO: Adicionar botão para contato -->
+      <ul class="contact-list">
+        <!-- TODO: Adicionar itens de acessibilidade para os itens de contato -->
+        <li class="contact-item"><a class="contact-link" href="mailto:landercosta@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        <li class="contact-item"><a class="contact-link" href="https://github.com/landercosta" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        <li class="contact-item"><a class="contact-link" href="https://twitter.com/landeralcosta" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="contact-item"><a class="contact-link" href="https://www.linkedin.com/in/landercosta/" target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>

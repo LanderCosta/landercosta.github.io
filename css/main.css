@@ -1,12 +1,15 @@
 :root {
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  --primary-color: #070707; /* Usado em fontes e detalhes */
+  --background-color: #f6f6f6;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  border-top: 3px solid purple;
-  color: purple;
-  padding-top: 4rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -15,14 +18,52 @@ main {
   text-align: center;
 }
 
-.profile-photo {
-  border-radius: 50%;
-  height: 10rem;
-  margin-right: 4rem;
-  padding-left: 4rem;
-  width: 10rem;
+section {
+  padding: 2rem;
 }
 
-h1 {
-  font-weight: 500;
+.about,
+.contact{
+  background-color: var(--background-color);
+}
+
+
+.hero {
+  text-align: left;
+}
+
+.hero h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/*
+  A classe profile-photo tem um padding extra para ter um efeito no border-radius que deixa a imagem com um formato diferente. Porém a imagem fica descentralizada e a div profile-photo-centralizer centraliza a imagem.
+*/
+.profile-photo-centralizer {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  box-sizing: content-box;
+  height: auto;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  padding-left: 4rem;
+  width: 12rem;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+.contact-link {  
+  color: var(--primary-color);
+  font-size: 2rem;
 }
