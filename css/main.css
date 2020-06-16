@@ -44,11 +44,12 @@ section:nth-child(2n) {
   position: fixed;
   transition: all 0.5s ease-in-out;
   width: 100vw;
-  z-index: 2;
+  z-index: -1;
 }
 
 .menu-mobile.show {
   opacity: 1;
+  z-index: 2;
 }
 
 .menu-list {
