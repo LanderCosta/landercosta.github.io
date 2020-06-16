@@ -6,25 +6,25 @@
   addInteractions();
   
   function addInteractions(){
-    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
     const menuMobile = document.querySelector('.menu-mobile');
     const menuLinks = document.querySelectorAll('.menu-link');
     
-    addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile);
-    addMenuLinksClickToRemoveMobileMenu(menuLinks, menuBtn);
+    addHamburguerMenuClickToShowMobileMenu(menuHamburguer, menuMobile);
+    addMenuLinksClickToSimulateHamburguerClick(menuLinks, menuHamburguer);
   }
 
-  function addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile){
-    menuBtn.addEventListener('click', () => {
-      menuBtn.classList.toggle('open');
+  function addHamburguerMenuClickToShowMobileMenu(menuHamburguer, menuMobile){
+    menuHamburguer.addEventListener('click', () => {
+      menuHamburguer.classList.toggle('open');
       menuMobile.classList.toggle('show');
     });
   }
 
-  function addMenuLinksClickToRemoveMobileMenu(menuLinks, menuBtn){
+  function addMenuLinksClickToSimulateHamburguerClick(menuLinks, menuHamburguer){
     for(let menuLink of menuLinks){
       menuLink.addEventListener('click', () => {
-        menuBtn.click();
+        menuHamburguer.click();
       });
     }
   }
