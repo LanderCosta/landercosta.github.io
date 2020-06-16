@@ -11,7 +11,7 @@
     const menuLinks = document.querySelectorAll('.menu-link');
     
     addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile);
-    addMenuLinksClickToRemoveMenu(menuLinks, menuBtn);
+    addMenuLinksClickToRemoveMobileMenu(menuLinks, menuBtn);
   }
 
   function addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile){
@@ -21,7 +21,7 @@
     });
   }
 
-  function addMenuLinksClickToRemoveMenu(menuLinks, menuBtn){
+  function addMenuLinksClickToRemoveMobileMenu(menuLinks, menuBtn){
     for(let menuLink of menuLinks){
       menuLink.addEventListener('click', () => {
         menuBtn.click();

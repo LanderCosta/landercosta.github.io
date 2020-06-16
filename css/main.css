@@ -159,12 +159,34 @@ h1, h2 {
   width: 12rem;
 }
 
+.about {
+  display: flex;
+  justify-items: center;
+}
+
+.about p {
+  max-width: 30rem;
+}
+
+/* TODO: Ajustar tamanhos dos projetos no mobile e no pc */
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin-top: 2rem;
   padding-left: 0;
+}
+
+@media(min-width: 22em){
+  .contact-list {
+    width: 15rem;
+  }
 }
 
 .contact-link {  
