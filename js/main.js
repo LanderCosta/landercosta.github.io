@@ -3,17 +3,30 @@
   
   'use strict';
 
-  addHamburguerAnimation();
-
-  function addHamburguerAnimation(){
+  addInteractions();
+  
+  function addInteractions(){
     const menuBtn = document.querySelector('.menu-hamburguer');
     const menuMobile = document.querySelector('.menu-mobile');
-    let menuOpen = false;
+    const menuLinks = document.querySelectorAll('.menu-link');
+    
+    addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile);
+    addMenuLinksClickToRemoveMenu(menuLinks, menuBtn);
+  }
+
+  function addHamburguerMenuClickToShowMobileMenu(menuBtn, menuMobile){
     menuBtn.addEventListener('click', () => {
       menuBtn.classList.toggle('open');
       menuMobile.classList.toggle('show');
-      menuOpen = !menuOpen;
     });
   }
 
+  function addMenuLinksClickToRemoveMenu(menuLinks, menuBtn){
+    for(let menuLink of menuLinks){
+      menuLink.addEventListener('click', () => {
+        menuBtn.click();
+      });
+    }
+  }
+  
 })();
