@@ -1,7 +1,10 @@
 :root {
+  /* screen-contact: 22rem; */
+  /* screen-menu: 48rem; */
   font-size: 16px;
   --primary-color: #070707; /* Usado em fontes e detalhes */
   --background-color: #f6f6f6;
+  --link-hover-color: #5d5d5d;
 }
 
 *,
@@ -31,6 +34,14 @@ section:nth-child(2n) {
   margin-left: auto;
   margin-right: auto;
   max-width: 45rem;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
 }
 
 /* Begin of mobile menu */
@@ -89,7 +100,7 @@ h1, h2 {
   margin: 0;
 }
 
-.menu-hamburguer {
+.btn-hamburguer {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -97,6 +108,25 @@ h1, h2 {
   justify-content: center;
   width: 3rem;
   z-index: 4;
+}
+
+.menulg-list {
+  border-bottom: 1px solid var(--primary-color);
+  display: none;
+  list-style-type: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.menulg-item {
+  margin-bottom: 1.5rem;
+}
+
+.menulg-link {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .hamburguer {
@@ -128,15 +158,15 @@ h1, h2 {
   transform: translateY(0.5rem);
 }
 
-.menu-hamburguer.open .hamburguer {
+.btn-hamburguer.open .hamburguer {
   transform: rotate(45deg);
 }
 
-.menu-hamburguer.open .hamburguer:before {
+.btn-hamburguer.open .hamburguer:before {
   transform: rotate(90deg);
 }
 
-.menu-hamburguer.open .hamburguer:after {
+.btn-hamburguer.open .hamburguer:after {
   transform: rotate(90deg);
 }
 
@@ -183,13 +213,62 @@ h1, h2 {
   padding-left: 0;
 }
 
-@media(min-width: 22em){
+@media(min-width: 22rem){
   .contact-list {
     width: 15rem;
   }
 }
 
+.contact-item:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 .contact-link {  
   color: var(--primary-color);
   font-size: 2rem;
+}
+
+footer {
+  background-color: var(--background-color);
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Media querie to change mobile menu to large menu */
+@media (min-width: 40rem){
+  .hero {
+    padding-top: 2rem;
+  }
+
+  header {
+    display: block;
+  }
+
+  .presentation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .presentation-description {
+    text-align: right;
+  }
+  
+  .btn-hamburguer, .menu-mobile {
+    display: none;
+  }
+
+  .menulg-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-photo-centralizer {
+    margin-top: 4rem;
+  }
+
+  .profile-photo {
+    width: 12rem;
+  }
 }

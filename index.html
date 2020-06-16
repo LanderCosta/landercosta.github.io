@@ -9,26 +9,32 @@
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://kit.fontawesome.com/771023af83.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <aside class="menu-mobile">
+<body>  
+  <nav class="menu-mobile">
     <ul class="menu-list">
       <li class="menu-item"><a class="menu-link" href="#hero">Home</a></li>
       <li class="menu-item"><a class="menu-link" href="#about">Sobre</a></li>
       <li class="menu-item"><a class="menu-link" href="#projects">Projetos</a></li>
       <li class="menu-item"><a class="menu-link" href="#contact">Contato</a></li>
     </ul>
-  </aside>
+  </nav>
   <main>
     <section id="hero" class="hero">
       <div class="container">
         <header>             
-          <div>
+          <nav class="menulg-list">
+            <li class="menulg-item"><a class="menulg-link" href="#hero">Home</a></li>
+            <li class="menulg-item"><a class="menulg-link" href="#about">Sobre</a></li>
+            <li class="menulg-item"><a class="menulg-link" href="#projects">Projetos</a></li>
+            <li class="menulg-item"><a class="menulg-link" href="#contact">Contato</a></li>
+          </nav> 
+          <div class="presentation">
             <h1>Lander<br>Costa</h1>
-            <p>Web Developer<br>Natal/RN - Brasil</p>
+            <p class="presentation-description">Web Developer<br>Natal/RN - Brasil</p>
           </div>
-            <div class="menu-hamburguer">
-              <div class="hamburguer"></div>
-            </div>
+          <div class="btn-hamburguer">
+            <div class="hamburguer"></div>
+          </div>
         </header>
         <div class="profile-photo-centralizer">
           <!-- TODO: Testar troca de imagem com foto sorrindo -->
@@ -61,8 +67,7 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2>Contato</h2>
-        <p>Quer falar comigo?<br>Seja bem-vindo!</p>
-        <!-- TODO: Adicionar botão para contato -->
+        <p>Quer falar comigo?<br>Seja bem-vindo!</p>        
         <ul class="contact-list">
           <!-- TODO: Adicionar itens de acessibilidade para os itens de contato -->
           <li class="contact-item"><a class="contact-link" href="mailto:landercosta@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
@@ -73,6 +78,14 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        Modelo do site inspirado no <a href="https://www.behance.net/gallery/80490563/Free-Landing-Page-Template" target="_blank">design</a> de <a href="https://www.behance.net/novik_denis" target="_blank">Denis Novik</a>
+      </p>
+    </div>
+  </footer>
 
   <script src="./js/main.js"></script>
 </body>
