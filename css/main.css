@@ -1,6 +1,7 @@
 :root {
-  /* screen-contact: 22rem; */
-  /* screen-menu: 48rem; */
+  /* changing menus: 40rem; */
+  /* menu width: 56rem; */
+  /* contact width: 22rem; */
   --primary-color: #070707; /* Usado em fontes e detalhes */
   --background-color: #f6f6f6;
   --link-hover-color: #5d5d5d;
@@ -34,7 +35,7 @@ section:nth-child(2n) {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 45rem;
+  max-width: 56rem;
 }
 
 a {
@@ -126,6 +127,7 @@ h1, h2 {
 .menulg-link {
   color: var(--primary-color);
   font-weight: 700;
+  padding: 1rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
