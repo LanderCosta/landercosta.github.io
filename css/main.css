@@ -2,7 +2,7 @@
   /* changing menus: 40rem; */
   /* menu width: 56rem; */
   /* contact width: 22rem; */
-  --primary-color: #070707; /* Usado em fontes e detalhes */
+  --primary-color: #070707; /* Used on fonts and details */
   --background-color: #f6f6f6;
   --link-hover-color: #5d5d5d;
   scroll-behavior: smooth;
@@ -174,7 +174,7 @@ h1, h2 {
 }
 
 /*
-  A classe profile-photo tem um padding extra para ter um efeito no border-radius que deixa a imagem com um formato diferente. Porém a imagem fica descentralizada e a div profile-photo-centralizer centraliza a imagem.
+  The profile-photo class has a extra padding to show an border-radius effect that changes the image format. However, the image decentralizes itself and the .profile-photo-centralizer div assumes the function of centralize it.
 */
 .profile-photo-centralizer {
   display: flex;
