@@ -1,7 +1,7 @@
 :root {
-  /* changing menus: 40rem; */
-  /* menu width: 56rem; */
-  /* contact width: 22rem; */
+  /* changing menus - 40rem; */
+  /* menu width - 56rem; */
+  /* contact width - 22rem; */
   --primary-color: #070707; /* Used on fonts and details */
   --background-color: #f6f6f6;
   --link-hover-color: #5d5d5d;
@@ -200,8 +200,6 @@ h1, h2 {
 .about p {
   max-width: 30rem;
 }
-
-/* TODO: Ajustar tamanhos dos projetos no mobile e no pc */
 
 .contact {
   display: flex;
